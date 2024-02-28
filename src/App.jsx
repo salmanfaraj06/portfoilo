@@ -5,6 +5,7 @@ import Myself from './components/myself';
 import Projects from './components/projects';
 import Awards from './components/awards';
 import Footer from './components/footer';
+import Socials from './components/socials';
 import './App.css';
 
 
@@ -17,6 +18,7 @@ function App() {
     <>
     <Header/>
     <AboutMe/>
+    <Socials/>
     <SkillSection/>
     <Awards/>
     <Myself/>

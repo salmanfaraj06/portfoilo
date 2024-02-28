@@ -38,58 +38,6 @@ function AboutMe() {
           innovative team.
         </Text>
 
-        <div>
-          <List
-            className="sm:flex-col flex-row gap-8 grid grid-cols-3 justify-start left-[3%] py-1"
-            orientation="horizontal"
-          >
-            <div className="bg-white-A700  outline outline-[1px] outline-black-900 border-solid flex flex-col h-14 md:h-auto items-center justify-center p-4 rounded w-full">
-              <div className="flex flex-col h-5 items-center justify-start w-">
-                <a
-                  href="https://www.instagram.com/salmaaan.fr/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Img
-                    className="h-5 w-5"
-                    src="images/img_socialicon_black_900.svg"
-                    alt="socialicon"
-                  />
-                </a>
-              </div>
-            </div>
-            <div className="flex flex-col h-14 md:h-auto items-center justify-center outline outline-[1px] outline-black-900 p-4 rounded w-full">
-              <div className="flex flex-col h-5 items-center justify-start w-5">
-                <a
-                  href="https://github.com/salmanfaraj06"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Img
-                    className="h-5 w-7"
-                    src="images/git.svg"
-                    alt="socialicon"
-                  />
-                </a>
-              </div>
-            </div>
-            <div className="flex flex-col h-14 md:h-auto items-center justify-center outline outline-[1px] outline-black-900 p-4 rounded w-full">
-              <div className="flex flex-col h-5 items-center justify-start w-5">
-                <a
-                  href="https://www.linkedin.com/in/salman-faraj-2617a924b/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Img
-                    className="h-5 w-5"
-                    src="images/img_iconlinkedin.svg"
-                    alt="iconlinkedin"
-                  />
-                </a>
-              </div>
-            </div>
-          </List>
-        </div>
       </div>
 
       <div className="md:hidden flex-[.5] relative bg-red-400">
