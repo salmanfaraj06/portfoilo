@@ -8,13 +8,13 @@ function AboutMe() {
       <div className="flex-[.5] space-y-8 sm:mt-4">
         <div className="flex items-center space-x-4">
           <Text
-            className="text-4xl sm:text-2xl md:text-[38px] lg:text-[48px] text-black-900 tracking-[-0.96px] w-auto"
+            className="text-5xl sm:text-2xl md:text-[38px] lg:text-[48px] text-black-900 tracking-[-0.96px] w-auto"
             size="txtSoraRegular48"
           >
             Hello I’am
           </Text>
           <Text
-            className="text-4xl sm:text-2xl md:text-[38px] lg:text-[48px] text-black-900 tracking-[-0.96px] w-auto"
+            className="text-5xl sm:text-2xl md:text-[38px] lg:text-[48px] text-black-900 tracking-[-0.96px] w-auto"
             size="txtSoraExtraBold48"
           >
             Salman Faraj
