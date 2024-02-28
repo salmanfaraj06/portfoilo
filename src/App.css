@@ -6,6 +6,7 @@
 }
 
 body {
-    overflow-x: hidden; /* Hide horizontal overflow */
-    overflow-y: auto; /* Only show vertical scrollbar when necessary */
+    overflow-x: hidden; 
+    overflow-y: auto;
+    font-family: 'Sora', sans-serif; 
   }
