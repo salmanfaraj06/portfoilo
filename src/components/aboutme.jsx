@@ -2,26 +2,24 @@ import React from "react";
 import Img from "./img";
 import Text from "./text";
 
-
-
 function AboutMe() {
   return (
     <div className="h-[75vh] flex items-center justify-center sm-flex-row md:flex-col flex-row mx-16">
-      <div className="flex-[.5] space-y-8">
-      <div className="flex items-center space-x-4">
-        <Text
-          className="text-4xl sm:text-2xl md:text-[38px] lg:text-[46px] text-black-900 tracking-[-0.96px] w-auto"
-          size="txtSoraRegular48"
-        >
-          Hello I’am
-        </Text>
-        <Text
-          className="text-4xl sm:text-2xl md:text-[38px] lg:text-[46px] text-black-900 tracking-[-0.96px] w-auto"
-          size="txtSoraExtraBold48"
-        >
-          Salman Faraj
-        </Text>
-      </div>
+      <div className="flex-[.5] space-y-8 sm:mt-4">
+        <div className="flex items-center space-x-4">
+          <Text
+            className="text-4xl sm:text-2xl md:text-[38px] lg:text-[48px] text-black-900 tracking-[-0.96px] w-auto"
+            size="txtSoraRegular48"
+          >
+            Hello I’am
+          </Text>
+          <Text
+            className="text-4xl sm:text-2xl md:text-[38px] lg:text-[48px] text-black-900 tracking-[-0.96px] w-auto"
+            size="txtSoraExtraBold48"
+          >
+            Salman Faraj
+          </Text>
+        </div>
 
         <Text
           className="leading-[24px] max-w-[600px] md:max-w-full text-base text-gray-900 tracking-[0.32px] text-justify"
@@ -36,7 +34,6 @@ function AboutMe() {
           I look forward to the opportunity to contribute to a dynamic and
           innovative team.
         </Text>
-
       </div>
 
       <div className="md:hidden flex-[.5] relative bg-red-400">
