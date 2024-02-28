@@ -21,10 +21,10 @@ function Socials() {
   ];
 
   return (
-    <div className="flex justify-start gap-8 ml-[65px]">
+    <div className="flex justify-start gap-8 ml-[65px] w-[200px]">
       {socials.map((social, index) => (
         <a key={index} href={social.href} target="_blank" rel="noopener noreferrer" >
-          <Img className="h-9 w-9" src={social.imgSrc} alt={social.alt} />
+          <Img className="h-8 w-9" src={social.imgSrc} alt={social.alt} />
         </a>
       ))}
     </div>

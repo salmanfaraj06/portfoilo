@@ -11,21 +11,19 @@ function Header() {
       <div className="flex flex-row md:gap-10 items-center justify-between max-w-full sm:px-5 px-5 w-full">
         <div className="header-row my-3">
           <div className="flex flex-row gap-3 items-center justify-start">
-            <Img
-              className="h-10 w-[39px]"
-              src="images/img_logo1.svg"
-              alt="logo"
-            />
             <a
               href="/"
               className="capitalize text-black-900 text-xl  w-auto font-bold "
             >
-              Personal
+              <Img
+                className="h-10 w-[39px]"
+                src="images/favicon.png"
+                alt="logo"
+              />
             </a>
           </div>
         </div>
         <div className="font-bold flex sm:flex-col flex-row gap-8 md:hidden items-center justify-center w-auto">
-          
           <a
             href="#skills"
             className="capitalize text-black-900 text-xl  w-auto p-2"
@@ -90,14 +88,16 @@ function Header() {
 
       {isOpen && (
         <div className="block lg:hidden text-right mt-4 mr-5 space-y-5 w-full">
-          
           <a
             href="#skills"
             className="block py-1 capitalize text-black-900 text-xl hover:underline mr-[50px]"
           >
             Skills
           </a>
-          <a href="#about" className="block py-1 capitalize text-black-900 text-xl hover:underline mr-[50px]">
+          <a
+            href="#about"
+            className="block py-1 capitalize text-black-900 text-xl hover:underline mr-[50px]"
+          >
             About Me
           </a>
           <a
@@ -125,4 +125,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default Header;

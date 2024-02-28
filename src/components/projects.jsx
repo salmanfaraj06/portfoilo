@@ -46,7 +46,7 @@ function projects() {
                 Node Real Time Chat Application
               </Text>
               <Text
-                className="leading-[24.00px] max-w-[582px] md:max-w-full text-base text-gray-600 tracking-[0.32px]"
+                className="leading-[24.00px] max-w-[582px] md:max-w-full text-base text-gray-600 tracking-[0.32px] text-justify"
                 size="txtSoraRegular16"
               >
                 <>
@@ -82,7 +82,7 @@ function projects() {
                 MERN Note Taking Application
               </Text>
               <Text
-                className="leading-[24.00px] text-base text-gray-600 tracking-[0.32px]"
+                className="leading-[24.00px] text-base text-gray-600 tracking-[0.32px] text-justify"
                 size="txtSoraRegular16"
               >
                 <>
@@ -135,7 +135,7 @@ function projects() {
                 React Smart Home Dashboard
               </Text>
               <Text
-                className="leading-[24.00px] max-w-[582px] md:max-w-full text-base text-gray-600 tracking-[0.32px]"
+                className="leading-[24.00px] max-w-[582px] md:max-w-full text-base text-gray-600 tracking-[0.32px] text-justify"
                 size="txtSoraRegular16"
               >
                 <>
@@ -175,7 +175,7 @@ function projects() {
                 React Blog Website
               </Text>
               <Text
-                className="leading-[24.00px] text-base text-gray-600 tracking-[0.32px]"
+                className="leading-[24.00px] text-base text-gray-600 tracking-[0.32px] text-justify"
                 size="txtSoraRegular16"
               >
                 <>Developed a blog website about Chat GPT using React.js.</>
