@@ -21,10 +21,10 @@ function Socials() {
   ];
 
   return (
-    <div className="flex justify-start gap-8 ml-[65px] w-[200px] sm:mt-3">
+    <div className="flex justify-start gap-8 ml-[65px] w-[200px] sm:mt-3 ">
       {socials.map((social, index) => (
         <a key={index} href={social.href} target="_blank" rel="noopener noreferrer" >
-          <Img className="h-8 w-9" src={social.imgSrc} alt={social.alt} />
+          <Img className="h-8 w-9 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110" src={social.imgSrc} alt={social.alt} />
         </a>
       ))}
     </div>
