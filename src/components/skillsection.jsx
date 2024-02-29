@@ -1,7 +1,6 @@
 import React from "react";
 import PortfolioSkills from "./portfolioskills";
 import Text from "./text";
-import Img from "./img";
 
 function SkillSection() {
   return (
@@ -97,12 +96,11 @@ function SkillSection() {
             icon="images/mui.svg"
             text="MUI"
           />
-           <PortfolioSkills
+          <PortfolioSkills
             className="bg-white-A700 border-2 border-black-900 border-solid flex flex-1 flex-col gap-8 h-[186px] md:h-auto items-center justify-center p-6 sm:px-5 rounded w-full"
             icon="images/sql.png"
             text="SQL"
           />
-          
         </div>
       </div>
     </div>

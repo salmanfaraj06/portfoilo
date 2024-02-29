@@ -2,13 +2,34 @@ import React, { useState } from "react";
 import Img from "./img";
 import Button from "./button";
 import { FiMenu, FiX } from "react-icons/fi";
+import Snackbar from "@mui/material/Snackbar";
+import Alert from '@mui/material/Alert';
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
+  const [downloadSuccess, setDownloadSuccess] = useState(false);
+
+  const handleDownload = () => {
+    // After click
+    setDownloadSuccess(true);
+
+    // Remove the animation after it's finished
+    setTimeout(() => {
+      setDownloadSuccess(false);
+    }, 2000); // The same duration as your CSS animation
+  };
+
+  const handleClose = (event, reason) => {
+    if (reason === "clickaway") {
+      return;
+    }
+
+    setDownloadSuccess(false);
+  };
 
   return (
-    <header className="flex flex-col items-center justify-center px-10 md:px-5 py-6 w-full max-w-full ">
-      <div className="flex flex-row md:gap-10 items-center justify-between max-w-full sm:px-5 px-5 w-full">
+    <header className=" flex flex-col items-center justify-center px-10 md:px-5 py-6 w-full max-w-full">
+      <div className=" flex flex-row md:gap-10 items-center justify-between max-w-full sm:px-5 px-5 w-full ">
         <div className="header-row my-3">
           <div className="flex flex-row gap-3 items-center justify-start">
             <a
@@ -53,6 +74,8 @@ function Header() {
           <a
             href="https://drive.google.com/uc?export=download&id=1cHUymhkgmA7cBffZLwfBhtZ7c2zQEUJF"
             download
+            onClick={handleDownload}
+            
           >
             <Button
               className="cursor-pointer flex h-14 sm:hidden items-center justify-center min-w-[153px]"
@@ -73,6 +96,19 @@ function Header() {
               </div>
             </Button>
           </a>
+          <Snackbar
+            open={downloadSuccess}
+            autoHideDuration={2000}
+            onClose={handleClose}
+          >
+            <Alert
+              onClose={handleClose}
+              severity="success"
+              sx={{ width: "100%" }}
+            >
+              Downloaded!
+            </Alert>
+          </Snackbar>
 
           <div className="hidden md:block">
             <button

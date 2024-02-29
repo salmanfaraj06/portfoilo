@@ -26,7 +26,7 @@ function projects() {
         <div className="flex md:flex-col flex-row gap-10 items-center justify-start py-5 w-full">
           <div className="flex sm:flex-1 flex-col h-[476px] md:h-auto items-center justify-start w-[594px] sm:w-full md:order-2">
             <Img
-              className="h-[397px] md:h-auto object-cover rounded-[18px] w-[530px]"
+              className="h-[397px] md:h-auto object-cover rounded-[18px] w-[530px] transform transition-all duration-500 hover:scale-105 hover:rotate-3 hover:shadow-lg"
               src="images/chatapp.jpg"
               alt="image771"
             />
@@ -106,7 +106,7 @@ function projects() {
           </div>
           <div className="flex sm:flex-1 flex-col h-[476px] md:h-auto items-center justify-end w-[594px] sm:w-full">
             <Img
-              className="h-[397px] md:h-auto object-cover rounded-[18px] w-[530px]"
+              className="h-[397px] md:h-auto object-cover rounded-[18px] w-[530px] transform transition-all duration-500 hover:scale-105 hover:-rotate-3 hover:shadow-lg"
               src="images/note.jpg"
               alt="image770"
             />
@@ -115,7 +115,7 @@ function projects() {
         <div className="flex md:flex-col flex-row gap-10 items-center justify-start py-5 w-full">
           <div className="flex sm:flex-1 flex-col h-[476px] md:h-auto items-center justify-start w-[594px] sm:w-full md:order-2">
             <Img
-              className="h-[397px] md:h-auto object-cover rounded-[18px] w-[530px]"
+              className="h-[397px] md:h-auto object-cover rounded-[18px] w-[530px] transform transition-all duration-500 hover:scale-105 hover:rotate-3 hover:shadow-lg"
               src="images/smarthome.jpg"
               alt="image771"
             />
@@ -195,7 +195,7 @@ function projects() {
           </div>
           <div className="flex sm:flex-1 flex-col h-[476px] md:h-auto items-center justify-end w-[594px] sm:w-full">
             <Img
-              className="h-[397px] md:h-auto object-cover rounded-[18px] w-[530px]"
+              className="h-[397px] md:h-auto object-cover rounded-[18px] w-[530px] transform transition-all duration-500 hover:scale-105 hover:-rotate-3 hover:shadow-lg"
               src="images/blog.jpg"
               alt="image770"
             />
