@@ -28,7 +28,7 @@ function Header() {
   };
 
   return (
-    <header className=" flex flex-col items-center justify-center px-10 md:px-5 py-6 w-full max-w-full">
+    <header className=" flex flex-col items-center justify-center px-10 md:px-5 py-6 w-full max-w-full sm:mb-3">
       <div className=" flex flex-row md:gap-10 items-center justify-between max-w-full sm:px-5 px-5 w-full ">
         <div className="header-row my-3">
           <div className="flex flex-row gap-3 items-center justify-start">

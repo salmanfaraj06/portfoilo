@@ -37,7 +37,7 @@ const Card = ({ className, Title, date, description, logoSrc }) => {
           </Text>
         </div>
         <Text
-          className="leading-[24.00px] max-w-[1120px] md:max-w-full text-base text-blue_gray-100 tracking-[0.32px]"
+          className="leading-[24.00px] max-w-[1120px] md:max-w-full text-base text-blue_gray-100 tracking-[0.32px] text-justify"
           size="txtSoraRegular16Bluegray100"
         >
           {description}

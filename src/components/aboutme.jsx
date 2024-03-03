@@ -35,7 +35,7 @@ useEffect(() => {
 }, [charIndex, textIndex, texts, isDeleting]);
 
   return (
-    <div className="h-[75vh] flex items-center justify-center sm-flex-row md:flex-col flex-row mx-16">
+    <div className="h-[75vh] flex items-center justify-center sm-flex-row md:flex-col flex-row mx-16 sm:mb-3">
       <div className="flex-[.5] space-y-8 sm:mt-4">
         <div className="flex flex-row md:flex-col space-x-4 md:space-x-0 md:space-y-4 mb-2">
           <Text
