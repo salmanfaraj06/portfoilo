@@ -37,7 +37,7 @@ function Header() {
               className="capitalize text-black-900 text-xl  w-auto font-bold "
             >
               <Img
-                className="h-10 w-[39px]"
+                className="h-10 w-[39px] sm:hidden"
                 src="images/favicon.png"
                 alt="logo"
               />
@@ -123,7 +123,7 @@ function Header() {
       </div>
 
       {isOpen && (
-        <div className="block lg:hidden text-right mt-4 mr-5 space-y-5 w-full">
+        <div className="block lg:hidden text-right mt-4 mr-5 space-y-5 w-full sm:mb-3">
           <a
             href="#skills"
             className="block py-1 capitalize text-black-900 text-xl hover:underline mr-[50px]"

@@ -6,33 +6,36 @@ import { useState, useEffect } from "react";
 function AboutMe() {
   const texts = [
     "Salman Faraj      ",
-    "a Software Developer  ",
+    "a Software Engineer  ",
     "a React Developer ",
   ];
   const [typedText, setTypedText] = useState("");
-const [charIndex, setCharIndex] = useState(0);
-const [textIndex, setTextIndex] = useState(0);
-const [isDeleting, setIsDeleting] = useState(false);
+  const [charIndex, setCharIndex] = useState(0);
+  const [textIndex, setTextIndex] = useState(0);
+  const [isDeleting, setIsDeleting] = useState(false);
 
-useEffect(() => {
-  const timerId = setInterval(() => {
-    if (!isDeleting && charIndex < texts[textIndex].length) {
-      setTypedText((typedText) => typedText + texts[textIndex][charIndex]);
-      setCharIndex((charIndex) => charIndex + 1);
-    } else if (charIndex > 0) {
-      setIsDeleting(true);
-      setTypedText((typedText) => typedText.slice(0, -1));
-      setCharIndex((charIndex) => charIndex - 1);
-    } else {
-      setIsDeleting(false);
-      setTextIndex((textIndex) => (textIndex + 1) % texts.length);
-    }
-  }, isDeleting ? 100 : 100);
+  useEffect(() => {
+    const timerId = setInterval(
+      () => {
+        if (!isDeleting && charIndex < texts[textIndex].length) {
+          setTypedText((typedText) => typedText + texts[textIndex][charIndex]);
+          setCharIndex((charIndex) => charIndex + 1);
+        } else if (charIndex > 0) {
+          setIsDeleting(true);
+          setTypedText((typedText) => typedText.slice(0, -1));
+          setCharIndex((charIndex) => charIndex - 1);
+        } else {
+          setIsDeleting(false);
+          setTextIndex((textIndex) => (textIndex + 1) % texts.length);
+        }
+      },
+      isDeleting ? 100 : 100
+    );
 
-  return () => {
-    clearInterval(timerId);
-  };
-}, [charIndex, textIndex, texts, isDeleting]);
+    return () => {
+      clearInterval(timerId);
+    };
+  }, [charIndex, textIndex, texts, isDeleting]);
 
   return (
     <div className="h-[75vh] flex items-center justify-center sm-flex-row md:flex-col flex-row mx-16 sm:mb-3">
