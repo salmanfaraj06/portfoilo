@@ -123,7 +123,7 @@ function Header() {
       </div>
 
       {isOpen && (
-        <div className="block lg:hidden text-right mt-4 mr-5 space-y-5 w-full sm:mb-3">
+        <div className="block lg:hidden text-right mt-4 mr-5 space-y-5 w-full">
           <a
             href="#skills"
             className="block py-1 capitalize text-black-900 text-xl hover:underline mr-[50px]"
