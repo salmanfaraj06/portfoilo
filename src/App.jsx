@@ -20,8 +20,8 @@ function App() {
     <AboutMe/>
     <Socials/>
     <SkillSection/>
-    <Awards/>
     <Myself/>
+    <Awards/>
     <Projects/>
     <Footer/>
     </>

@@ -58,17 +58,18 @@ function Header() {
             About Me
           </a>
           <a
-            href="#project"
-            className="capitalize text-black-900 text-xl  w-auto p-2"
-          >
-            Project
-          </a>
-          <a
             href="#awards"
             className="capitalize text-black-900 text-xl w-auto p-2"
           >
             Awards
           </a>
+          <a
+            href="#project"
+            className="capitalize text-black-900 text-xl  w-auto p-2"
+          >
+            Projects
+          </a>
+         
         </div>
         <div className="flex items-center space-x-5">
           <a
@@ -137,17 +138,18 @@ function Header() {
             About Me
           </a>
           <a
-            href="#project"
-            className="block py-1 capitalize text-black-900 text-xl hover:underline mr-[50px]"
-          >
-            Projects
-          </a>
-          <a
             href="#awards"
             className="block py-1 capitalize text-black-900 text-xl hover:underline mr-[50px]"
           >
             Awards
           </a>
+          <a
+            href="#project"
+            className="block py-1 capitalize text-black-900 text-xl hover:underline mr-[50px]"
+          >
+            Projects
+          </a>
+          
           <a
             className="block py-1 capitalize text-black-900 text-xl hover:underline mr-[50px]"
             href="https://drive.google.com/uc?export=download&id=1cHUymhkgmA7cBffZLwfBhtZ7c2zQEUJF"
