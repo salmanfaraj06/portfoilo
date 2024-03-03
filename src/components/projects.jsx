@@ -201,6 +201,52 @@ function projects() {
             />
           </div>
         </div>
+        <div className="flex md:flex-col flex-row gap-10 items-center justify-start py-5 w-full">
+          <div className="flex sm:flex-1 flex-col h-[476px] md:h-auto items-center justify-start w-[594px] sm:w-full md:order-2">
+            <Img
+              className="h-[397px] md:h-auto object-cover rounded-[18px] w-[530px] transform transition-all duration-500 hover:scale-105 hover:rotate-3 hover:shadow-lg"
+              src="images/chatapp.jpg"
+              alt="phone"
+            />
+          </div>
+          <div className="flex flex-1 flex-col items-start justify-center w-full md:order-1">
+            <div className="flex flex-col gap-[30px] items-start justify-start w-full">
+              <Text
+                className="text-5xl sm:text-[38px] md:text-[44px] text-white-A700 tracking-[-0.96px] w-full"
+                size="txtSoraExtraBold48WhiteA700"
+              >
+                05
+              </Text>
+              <Text
+                className="md:text-3xl sm:text-[28px] text-[32px] text-white-A700 tracking-[-0.64px] w-full"
+                size="txtSoraBold32"
+              >
+                MERN Social Media Application
+              </Text>
+              <Text
+                className="leading-[24.00px] max-w-[582px] md:max-w-full text-base text-gray-600 tracking-[0.32px] text-justify"
+                size="txtSoraRegular16"
+              >
+                <>
+                  Developed a social media application using the MERN stack with
+                  CRUD operations. The application allows users to upload, view,
+                  like, and delete posts 
+                </>
+              </Text>
+              <a
+                href="https://github.com/salmanfaraj06/memories-application"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Img
+                  className="h-5 w-5"
+                  src="images/img_link.svg"
+                  alt="link_Two"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

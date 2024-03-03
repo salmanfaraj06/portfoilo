@@ -8,9 +8,9 @@ function myself() {
   return (
     <div
       id="about"
-      className="flex flex-col items-center justify-center md:px-10 px-20 sm:px-5 py-[70px] w-full sm:mr-5"
+      className="flex flex-col items-center justify-center md:px-10 px-20 sm:px-5 py-[70px] w-full"
     >
-      <div className="flex md:flex-col flex-row md:gap-10 items-center justify-between max-w-7xl mx-auto sm:px-5 w-full ml-[-10px]">
+      <div className="flex md:flex-col flex-row md:gap-10 items-center justify-between max-w-7xl mx-auto sm:px-5 w-full">
       <div className="hidden sm:block"><SmallScreenPhoto /></div>
         <div className="sm:hidden md:block"><Photo /></div>
         <div className="flex md:flex-1 flex-col gap-5 h-[572px] md:h-auto items-start justify-start w-auto md:w-full">
