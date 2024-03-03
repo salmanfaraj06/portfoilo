@@ -1,6 +1,8 @@
 import React from "react";
 import Img from "./img";
 import Text from "./text";
+import Photo from "./photo";
+import SmallScreenPhoto from "./smallphoto";
 //linear-gradient(180deg, #AFAFAF 0%, #F2F2F2 100%)
 function myself() {
   return (
@@ -9,36 +11,8 @@ function myself() {
       className="flex flex-col items-center justify-center md:px-10 px-20 sm:px-5 py-[70px] w-full sm:mr-5"
     >
       <div className="flex md:flex-col flex-row md:gap-10 items-center justify-between max-w-7xl mx-auto sm:px-5 w-full ml-[-10px]">
-        <div style={{ position: "relative" }}>
-          <div
-            style={{
-              position: "absolute",
-              top: 0,
-              left: 0,
-              width: "100%",
-              height: "100%",
-              backgroundColor: "black",
-              zIndex: 1,
-            }}
-          ></div>
-          <div
-            style={{
-              position: "absolute",
-              top: 30, 
-              left: 30, 
-              width: "100%",
-              height: "95%",
-              background: "linear-gradient(180deg, #AFAFAF 0%, #F2F2F2 100%)",
-              zIndex: 2,
-            }}
-          ></div>
-          <Img
-            className="h-[600px] w-[490px] object-cover ml-7"
-            src="images/salman-1.png"
-            alt="myself"
-            style={{ position: "relative", zIndex: 3}}
-          />
-        </div>
+      <div className="hidden sm:block"><SmallScreenPhoto /></div>
+        <div className="sm:hidden md:block"><Photo /></div>
         <div className="flex md:flex-1 flex-col gap-5 h-[572px] md:h-auto items-start justify-start w-auto md:w-full">
           <div className="flex flex-row gap-4 items-start justify-start py-5 w-full">
             <Text
