@@ -1,6 +1,7 @@
 import React from "react";
 import Img from "./img";
 import Text from "./text";
+import Socials from "./socials";
 
 function footer() {
   return (
@@ -25,6 +26,9 @@ function footer() {
             >
               Salman Faraj Saheerdeen
             </Text>
+          </div>
+          <div className="flex flex-col items-end justify-start w-auto">
+            <Socials/>
           </div>
         </div>
       </div>
