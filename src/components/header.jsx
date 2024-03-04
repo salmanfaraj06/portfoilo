@@ -73,7 +73,7 @@ function Header() {
         </div>
         <div className="flex items-center space-x-5">
           <a
-            href="https://drive.google.com/uc?export=download&id=1cHUymhkgmA7cBffZLwfBhtZ7c2zQEUJF"
+            href="/assets/Salman-CV.pdf"
             download
             onClick={handleDownload}
             
@@ -152,7 +152,7 @@ function Header() {
           
           <a
             className="block py-1 capitalize text-black-900 text-xl hover:underline mr-[50px]"
-            href="https://drive.google.com/uc?export=download&id=1cHUymhkgmA7cBffZLwfBhtZ7c2zQEUJF"
+            href="/assets/Salman-CV.pdf"
             download
           >
             My Resume

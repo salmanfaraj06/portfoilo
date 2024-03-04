@@ -56,7 +56,7 @@ function AboutMe() {
         </div>
 
         <Text
-          className="leading-[24px] max-w-[600px] md:max-w-full text-base text-gray-900 text-justify"
+          className="leading-[24px] max-w-[600px] md:max-w-full text-base text-gray-900 text-justify tracking-[-0.32px]"
           size="txtSoraRegular16"
         >
           A Computer Science undergraduate at the Informatics Institute of

@@ -23,7 +23,7 @@ function Awards() {
           </div>
           <div className="flex flex-col items-start justify-start sm:px-5 px-6 py-5 w-full">
             <Card
-              className="border border-gray-600 border-solid flex flex-col gap-7 items-start justify-start sm:px-5 px-6 py-[30px] rounded-[10px] w-full transition-transform duration-500 ease-in-out transform hover:scale-105"
+              className="border border-gray-600 border-solid flex flex-col gap-7 items-start justify-start sm:px-5 px-6 py-[30px] tracking-[-0.32px] rounded-[10px] w-full transition-transform duration-500 ease-in-out transform hover:scale-105"
               Title="IX 23 Top 10 Finalist"
               date="Aug 2023"
               description="Lead my team to outshine 150  teams and got placed
@@ -34,9 +34,9 @@ function Awards() {
               logoSrc="images/trace.svg"
             />
             </div>
-            <div className="flex flex-col items-start justify-start sm:px-5 px-6 py-5 w-full">
+            <div className="flex flex-col items-start justify-start sm:px-5 px-6 py-5 w-full ">
             <Card
-              className="border border-gray-600 border-solid flex flex-col gap-7 items-start justify-start sm:px-5 px-6 py-[30px] rounded-[10px] w-full transition-transform duration-500 ease-in-out transform hover:scale-105"
+              className="border border-gray-600 border-solid flex flex-col gap-7 items-start tracking-[-0.32px] justify-start sm:px-5 px-6 py-[30px] rounded-[10px] w-full transition-transform duration-500 ease-in-out transform hover:scale-105"
               Title="Innovation Nation Sri Lanka 2023"
               date="Jan 2024"
               description="Participated in the Business Ideathon stage of Innovation Nation Srilanka and secured a spot for top 5 in Colombo North Division."

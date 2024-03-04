@@ -30,7 +30,7 @@ function myself() {
           </div>
           <div className="flex flex-col gap-5 items-start justify-center w-auto md:w-full">
             <Text
-              className="leading-[24.00px] max-w-[610px] md:max-w-full text-base text-gray-600 tracking-[0.32px] text-justify"
+              className="leading-[24.00px] max-w-[610px] md:max-w-full text-base text-gray-600 tracking-[-0.32px] text-justify"
               size="txtSoraRegular16"
             >
               <>
@@ -41,7 +41,7 @@ function myself() {
               </>
             </Text>
             <Text
-              className="leading-[24.00px] max-w-[610px] md:max-w-full text-base text-gray-600 tracking-[0.32px] text-justify"
+              className="leading-[24.00px] max-w-[610px] md:max-w-full text-base text-gray-600 tracking-[-0.32px] text-justify"
               size="txtSoraRegular16"
             >
               <>
@@ -54,7 +54,7 @@ function myself() {
               </>
             </Text>
             <Text
-              className="leading-[24.00px] max-w-[610px] md:max-w-full text-base text-gray-600 tracking-[0.32px] text-justify"
+              className="leading-[24.00px] max-w-[610px] md:max-w-full text-base text-gray-600 tracking-[-0.32px] text-justify"
               size="txtSoraRegular16"
             >
               I have a deep passion for participating in hackathons and
