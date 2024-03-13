@@ -19,9 +19,7 @@ function App() {
     <>
     <Header/>
     <AboutMe/>
-    <Blank/>
     <Socials/>
-    <Blank/>
     <SkillSection/>
     <Myself/>
     <Awards/>
