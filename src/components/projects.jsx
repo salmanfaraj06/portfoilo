@@ -1,6 +1,7 @@
 import React from "react";
 import Img from "./img";
 import Text from "./text";
+import Button from "./SkillButton/index";
 
 function projects() {
   return (
@@ -27,7 +28,7 @@ function projects() {
           <div className="flex sm:flex-1 flex-col h-[476px] md:h-auto items-center justify-start w-[594px] sm:w-full md:order-2">
             <Img
               className="h-[397px] md:h-auto object-cover rounded-[18px] w-[530px] transform transition-all duration-500 hover:scale-105 hover:rotate-3 hover:shadow-lg"
-              src="images/chatapp.jpg"
+              src="images/Elitebluprint.jpeg"
               alt="image771"
             />
           </div>
@@ -43,21 +44,33 @@ function projects() {
                 className="md:text-3xl sm:text-[28px] text-[32px] text-white-A700 tracking-[-0.64px] w-full"
                 size="txtSoraBold32"
               >
-                Node Real Time Chat Application
+                EliteBluPrint
               </Text>
               <Text
                 className="leading-[24.00px] max-w-[582px] md:max-w-full text-base text-gray-600 tracking-[-0.32px] text-justify"
                 size="txtSoraRegular16"
               >
                 <>
-                  Developed a real-time chat application using Node.js,
-                  Express.js, and ChatEngine The application allows users to
-                  create chat rooms and send messages in real-time. The
-                  application also supports images and file sharing.
+                  Software Development Group Project: Developed a Machine Learning based web application that can
+                  generate 2D housing floor plans using natural language input
+                  (NLP). The application allows users to generate floor plans,
+                  view the generated floor plans, and download the generated
+                  floor plans
                 </>
               </Text>
+              <div className="flex flex-row flex-wrap items-start justify-start w-[92%] gap-2">
+                {["React JS", "Mongo DB","Firebase","Python","Flask","Node JS","Express JS","Tailwind CSS","Material UI","Tensorflow","Keras"].map((tech, index) => (
+                  <Button
+                    key={index}
+                    shape="round"
+                    className="font-medium min-w-[79px]"
+                  >
+                    {tech}
+                  </Button>
+                ))}
+              </div>
               <a
-                href="https://github.com/salmanfaraj06/node-chatapp"
+                href="https://github.com/salmanfaraj06"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -91,6 +104,19 @@ function projects() {
                   read, update, and delete notes
                 </>
               </Text>
+              <div className="flex flex-row flex-wrap items-start justify-start w-[92%] gap-2">
+                {["React JS", "Mongo DB", "CSS", "Node JS", "Express JS"].map(
+                  (tech, index) => (
+                    <Button
+                      key={index}
+                      shape="round"
+                      className="font-medium min-w-[79px]"
+                    >
+                      {tech}
+                    </Button>
+                  )
+                )}
+              </div>
               <a
                 href="https://github.com/salmanfaraj06/MERN-NOTE-APP"
                 target="_blank"
@@ -145,6 +171,19 @@ function projects() {
                   home devices
                 </>
               </Text>
+              <div className="flex flex-row flex-wrap items-start justify-start w-[92%] gap-2">
+                {["React JS", "Railway API", "Tailwind CSS"].map(
+                  (tech, index) => (
+                    <Button
+                      key={index}
+                      shape="round"
+                      className="font-medium min-w-[79px]"
+                    >
+                      {tech}
+                    </Button>
+                  )
+                )}
+              </div>
               <a
                 href="https://smart-home-application-react.netlify.app/"
                 target="_blank"
@@ -180,6 +219,17 @@ function projects() {
               >
                 <>Developed a blog website about Chat GPT using React.js.</>
               </Text>
+              <div className="flex flex-row flex-wrap items-start justify-start w-[92%] gap-2">
+                {["React JS", "CSS"].map((tech, index) => (
+                  <Button
+                    key={index}
+                    shape="round"
+                    className="font-medium min-w-[79px]"
+                  >
+                    {tech}
+                  </Button>
+                ))}
+              </div>
               <a
                 href="https://react-gpt3-website.netlify.app/"
                 target="_blank"
@@ -230,9 +280,28 @@ function projects() {
                 <>
                   Developed a social media application using the MERN stack with
                   CRUD operations. The application allows users to upload, view,
-                  like, and delete posts 
+                  like, and delete posts
                 </>
               </Text>
+              <div className="flex flex-row flex-wrap items-start justify-start w-[92%] gap-2">
+                {[
+                  "React JS",
+                  "Mongo DB",
+                  "Tailwind CSS",
+                  "Node JS",
+                  "Express JS",
+                  "Material UI",
+                ].map((tech, index) => (
+                  <Button
+                    key={index}
+                    shape="round"
+                    className="font-medium min-w-[79px]"
+                  >
+                    {tech}
+                  </Button>
+                ))}
+              </div>
+
               <a
                 href="https://github.com/salmanfaraj06/memories-application"
                 target="_blank"

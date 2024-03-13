@@ -183,3 +183,42 @@ ul li a{
   background: #6b6b6b;
   border-radius: 10px;
 }
+:root {
+  --body2-normal-all-font-family: "Inter", Helvetica;
+  --body2-normal-all-font-size: 16px;
+  --body2-normal-all-font-style: normal;
+  --body2-normal-all-font-weight: 400;
+  --body2-normal-all-letter-spacing: 0px;
+  --body2-normal-all-line-height: 24px;
+  --body3-medium-all-font-family: "Inter", Helvetica;
+  --body3-medium-all-font-size: 14px;
+  --body3-medium-all-font-style: normal;
+  --body3-medium-all-font-weight: 500;
+  --body3-medium-all-letter-spacing: 0px;
+  --body3-medium-all-line-height: 20px;
+  --drop-shadow-2xl: 0px 25px 25px 0px rgba(0, 0, 0, 0.15);
+  --drop-shadow-lg: 0px 10px 8px 0px rgba(0, 0, 0, 0.04), 0px 4px 3px 0px rgba(0, 0, 0, 0.1);
+  --primitives-gray-100: rgba(243, 244, 246, 1);
+  --primitives-gray-200: rgba(229, 231, 235, 1);
+  --primitives-gray-600: rgba(75, 85, 99, 1);
+  --primitives-gray-700: rgba(55, 65, 81, 1);
+  --primitives-gray-dark-100: rgba(31, 41, 55, 1);
+  --primitives-gray-dark-200: rgba(55, 65, 81, 1);
+  --primitives-gray-dark-200-duplicate: rgba(55, 65, 81, 1);
+  --primitives-gray-dark-600: rgba(209, 213, 219, 1);
+  --primitives-gray-dark-600-duplicate: rgba(209, 213, 219, 1);
+  --primitives-gray-dark-900: rgba(249, 250, 251, 1);
+  --primitives-gray-dark-default: rgba(3, 7, 18, 1);
+  --subtitle-normal-desktop-font-family: "Inter", Helvetica;
+  --subtitle-normal-desktop-font-size: 20px;
+  --subtitle-normal-desktop-font-style: normal;
+  --subtitle-normal-desktop-font-weight: 400;
+  --subtitle-normal-desktop-letter-spacing: 0px;
+  --subtitle-normal-desktop-line-height: 28px;
+  --subtitle-semi-bold-desktop-font-family: "Inter", Helvetica;
+  --subtitle-semi-bold-desktop-font-size: 20px;
+  --subtitle-semi-bold-desktop-font-style: normal;
+  --subtitle-semi-bold-desktop-font-weight: 600;
+  --subtitle-semi-bold-desktop-letter-spacing: 0px;
+  --subtitle-semi-bold-desktop-line-height: 28px;
+}
