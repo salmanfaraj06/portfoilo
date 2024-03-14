@@ -47,8 +47,9 @@ function AboutMe() {
           >
             Hello I’am
           </Text>
+
           <Text
-            className="sm:text-[24px] text-[38px]  text-black-900 tracking-[-0.96px] w-auto"
+            className="sm:text-[24px] text-[38px] h-1 text-black-900 tracking-[-0.96px] w-auto"
             size="txtSoraExtraBold48"
           >
             {typedText}

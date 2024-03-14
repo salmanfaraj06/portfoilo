@@ -27,7 +27,7 @@ function projects() {
         <div className="flex md:flex-col flex-row gap-10 items-center justify-start py-5 w-full">
           <div className="flex sm:flex-1 flex-col h-[476px] md:h-auto items-center justify-start w-[594px] sm:w-full md:order-2">
             <Img
-              className="h-[397px] md:h-auto object-cover rounded-[18px] w-[530px] hover:shadow-lg"
+              className="h-[397px] md:h-auto object-cover rounded-[18px] w-[530px]hover:shadow-lg"
               src="images/Elitebluprint.jpeg"
               alt="image771"
             />
