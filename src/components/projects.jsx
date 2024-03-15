@@ -70,7 +70,7 @@ function projects() {
                 ))}
               </div>
               <a
-                href="https://github.com/salmanfaraj06"
+                href="https://elitebluprint.live"
                 target="_blank"
                 rel="noopener noreferrer"
               >
