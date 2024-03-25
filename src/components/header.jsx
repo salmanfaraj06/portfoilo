@@ -73,7 +73,7 @@ function Header() {
         </div>
         <div className="flex items-center space-x-5">
           <a
-            href="/assets/Salman-CV.pdf"
+            href="/assets/cv-salman.pdf"
             download
             onClick={handleDownload}
             
