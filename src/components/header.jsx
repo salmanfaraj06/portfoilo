@@ -73,10 +73,10 @@ function Header() {
         </div>
         <div className="flex items-center space-x-5">
           <a
-            href="public/assets/Salman-cv.pdf"
-            download
+            href="https://drive.google.com/uc?export=download&id=1x4da8AliM_hyl94KVwdHLPjXM72tAK2B"
+            target="_blank"
+            rel="noopener noreferrer"
             onClick={handleDownload}
-            
           >
             <Button
               className="cursor-pointer flex h-14 sm:hidden items-center justify-center min-w-[153px]"
