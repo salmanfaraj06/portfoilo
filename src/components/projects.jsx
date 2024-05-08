@@ -28,8 +28,8 @@ function projects() {
           <div className="flex sm:flex-1 flex-col h-[476px] md:h-auto items-center justify-start w-[594px] sm:w-full md:order-2">
             <Img
               className="h-[397px] md:h-auto object-cover rounded-[18px] w-[530px]hover:shadow-lg"
-              src="images/Elitebluprint.jpeg"
-              alt="image771"
+              src="images/elitebluprint.jpg"
+              alt="elitebluprint"
             />
           </div>
           <div className="flex flex-1 flex-col items-start justify-center w-full md:order-1">
