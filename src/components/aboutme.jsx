@@ -71,7 +71,7 @@ function AboutMe() {
         </Text>
       </div>
 
-      <div className="md:hidden flex-[.5] relative bg-red-400">
+      <div className="md:hidden flex-[.5] relative ">
         <Img
           className="absolute h-[620px] inset-y-[0] my-auto right-[0] w-[889px] md:h-[400px] md:w-[600px] sm:h-[300px] sm:w-[400px] "
           src="images/img_banner.svg"
