@@ -60,8 +60,7 @@ function AboutMe() {
           className="leading-[24px] max-w-[600px] md:max-w-full text-base text-gray-900 text-justify tracking-[-0.32px]"
           size="txtSoraRegular16"
         >
-          A Computer Science undergraduate at the Informatics Institute of
-          Technology. I'm passionate about software development, with a
+          A Computer Science undergraduate at the IIT. I'm passionate about software development, with a
           particular interest in full-stack technologies. I'm currently seeking
           an internship where I can apply and expand my programming skills. I
           have a strong foundation in both front-end and back-end development,
