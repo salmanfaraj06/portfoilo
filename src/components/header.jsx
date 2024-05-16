@@ -3,7 +3,7 @@ import Img from "./img";
 import Button from "./button";
 import { FiMenu, FiX } from "react-icons/fi";
 import Snackbar from "@mui/material/Snackbar";
-import Alert from '@mui/material/Alert';
+import Alert from "@mui/material/Alert";
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -69,11 +69,10 @@ function Header() {
           >
             Projects
           </a>
-         
         </div>
         <div className="flex items-center space-x-5">
           <a
-            href="https://drive.google.com/uc?export=download&id=1x4da8AliM_hyl94KVwdHLPjXM72tAK2B"
+            href="https://drive.google.com/uc?export=download&id=15-BAb2ImuAcjh8d-H23CPCsfvrNlvXmL"
             target="_blank"
             rel="noopener noreferrer"
             onClick={handleDownload}
@@ -149,7 +148,7 @@ function Header() {
           >
             Projects
           </a>
-          
+
           <a
             className="block py-1 capitalize text-black-900 text-xl hover:underline mr-[50px]"
             href="/assets/Salman-CV.pdf"
