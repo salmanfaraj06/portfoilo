@@ -29,16 +29,50 @@ const projectData = [
   },
   {
     id: 2,
-    title: "MERN Note Taking Application",
+    title: "MERN Full Stack Application Boilerplate",
     description:
-      "Developed a full-stack note-taking application using the MERN stack with CRUD operations. The application allows users to create, read, update, and delete notes",
-    techStack: ["React JS", "Mongo DB", "CSS", "Node JS", "Express JS"],
-    imgSrc: "images/note.jpg",
-    link: "https://github.com/salmanfaraj06/MERN-NOTE-APP",
+      "Developed a comprehensive boilerplate for full stack applications to facilitate rapid development and ensure best practices. Includes authentication with JWT and Google OAuth, state management with Redux, and other essential features.",
+    techStack: [
+      "React",
+      "Redux",
+      "JavaScript",
+      "Tailwind CSS",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Firebase",
+      "JWT",
+      "OAuth",
+      "Git",
+      "GitHub",
+    ],
+    imgSrc: "",
+    link: "https://github.com/salmanfaraj06/mern-boilerplate",
     category: "Personal",
   },
   {
     id: 3,
+    title: "React Multilingual Website",
+    description:
+      "Developed a responsive multilingual website using React.js, Vite, Tailwind CSS, React Router, Redux & Redux Toolkit, and i18next. The website features real-text translation and language selection for English, Sinhala, and Tamil.",
+    techStack: ["React.js", "i18next", "Tailwind CSS", "React Router", "Redux"],
+    imgSrc: "", // You can add an image source here if available
+    link: "https://github.com/salmanfaraj06/tea-website",
+    category: "Personal",
+  },
+
+  // {
+  //   id: 3,
+  //   title: "MERN Note Taking Application",
+  //   description:
+  //     "Developed a full-stack note-taking application using the MERN stack with CRUD operations. The application allows users to create, read, update, and delete notes",
+  //   techStack: ["React JS", "Mongo DB", "CSS", "Node JS", "Express JS"],
+  //   imgSrc: "images/note.jpg",
+  //   link: "https://github.com/salmanfaraj06/MERN-NOTE-APP",
+  //   category: "Personal",
+  // },
+  {
+    id: 4,
     title: "React Smart Home Dashboard",
     description:
       "Developed a smart home dashboard using React.js with clerk authentication. The dashboard displays real-time Weather data from the weather API, Time, and allows users to control smart home devices",
@@ -48,7 +82,7 @@ const projectData = [
     category: "Personal",
   },
   {
-    id: 4,
+    id: 5,
     title: "React Blog Website",
     description: "Developed a blog website about Chat GPT using React.js.",
     techStack: ["React JS", "CSS"],
@@ -57,7 +91,7 @@ const projectData = [
     category: "Personal",
   },
   {
-    id: 5,
+    id: 6,
     title: "MERN Social Media Application",
     description:
       "Developed a social media application using the MERN stack with CRUD operations. The application allows users to upload, view, like, and delete posts",
