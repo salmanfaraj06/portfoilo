@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Carousel } from "react-responsive-carousel";
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 import PortfolioSkills from "./portfolioskills";
@@ -33,6 +33,25 @@ const devopsSkills = [
 ];
 
 const SkillSection = () => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    // Initial check on mount
+    handleResize();
+
+    // Listen to window resize events
+    window.addEventListener("resize", handleResize);
+
+    // Clean up listener on unmount
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   const skills = [
     { title: "Frontend", skills: frontendSkills },
     { title: "Backend", skills: backendSkills },
@@ -74,55 +93,84 @@ const SkillSection = () => {
             Skills
           </Text>
         </div>
-        <div className="mx-auto sm:w-full md:w-[85%] lg:w-1/3 xl:w-1/4">
-          <Carousel
-            showThumbs={false}
-            showStatus={false}
-            infiniteLoop
-            autoPlay={!/Mobi|Android/i.test(navigator.userAgent)}
-            interval={2700}
-            useKeyboardArrows
-            renderArrowPrev={(onClickHandler, hasPrev) =>
-              hasPrev && customArrow(onClickHandler, true)
-            }
-            renderArrowNext={(onClickHandler, hasNext) =>
-              hasNext && customArrow(onClickHandler, false)
-            }
-            renderIndicator={(onClickHandler, isSelected, index, label) => (
-              <li
-                key={index}
-                onClick={onClickHandler}
-                className={`inline-block mx-2 rounded-full w-2 h-2 cursor-pointer ${
-                  isSelected ? "bg-black-900" : "bg-gray-400"
-                }`}
-                aria-label={`${label} ${index + 1}`}
-              />
-            )}
-          >
-            {skills.map((category, index) => (
-              <div
-                key={index}
-                className="w-full flex flex-col items-center justify-center sm:w-full md:w-full lg:w-full xl:w-full"
-              >
-                <Text
-                  className="text-2xl mx-auto md:text-2xl sm:text-xl mb-4 md:mb-0 w-full text-center"
-                  size="txtSoraSemiBold24"
+        <div className="mx-auto sm:w-[75%] md:w-[95%] lg:w-1/3 xl:w-1/4">
+          {isMobile ? (
+            // Vertical scrolling view for mobile
+            <div>
+              {skills.map((category, index) => (
+                <div
+                  key={index}
+                  className="w-full flex flex-col items-center justify-center sm:w-full md:w-full lg:w-full xl:w-full"
                 >
-                  {category.title}
-                </Text>
-                <div className="grid grid-cols-3 p-10 m-2 md:grid-cols-2 sm:grid-cols-1 gap-12">
-                  {category.skills.map((skill, index) => (
-                    <PortfolioSkills
-                      key={index}
-                      className="bg-white-A700 flex gap-x-7 md:flex-row sm:flex-col items-center justify-evenly p-5 sm:p-5  w-full shadow-lg rounded-lg"
-                      icon={skill.icon}
-                      text={skill.text}
-                    />
-                  ))}
+                  <Text
+                    className="text-2xl mx-auto md:text-2xl sm:text-xl mb-4 md:mb-0 w-full text-center"
+                    size="txtSoraSemiBold24"
+                  >
+                    {category.title}
+                  </Text>
+                  <div className="grid p-10 sm:p-3 m-2 grid-cols-3 md:grid-cols-2 sm:grid-cols-2 gap-12">
+                    {category.skills.map((skill, index) => (
+                      <PortfolioSkills
+                        key={index}
+                        className="bg-white-A700 flex gap-x-7 md:flex-row sm:flex-col items-center justify-evenly p-5 sm:p-6 w-full shadow-lg rounded-lg"
+                        icon={skill.icon}
+                        text={skill.text}
+                      />
+                    ))}
+                  </div>
                 </div>
-              </div>
-            ))}
-          </Carousel>
+              ))}
+            </div>
+          ) : (
+            <Carousel
+              showThumbs={false}
+              showStatus={false}
+              infiniteLoop
+              autoPlay={!/Mobi|Android/i.test(navigator.userAgent)}
+              interval={2700}
+              useKeyboardArrows
+              renderArrowPrev={(onClickHandler, hasPrev) =>
+                hasPrev && customArrow(onClickHandler, true)
+              }
+              renderArrowNext={(onClickHandler, hasNext) =>
+                hasNext && customArrow(onClickHandler, false)
+              }
+              renderIndicator={(onClickHandler, isSelected, index, label) => (
+                <li
+                  key={index}
+                  onClick={onClickHandler}
+                  className={`inline-block mx-2 rounded-full w-2 h-2 cursor-pointer ${
+                    isSelected ? "bg-black-900" : "bg-gray-400"
+                  }`}
+                  aria-label={`${label} ${index + 1}`}
+                />
+              )}
+            >
+              {skills.map((category, index) => (
+                <div
+                  key={index}
+                  className="w-full flex flex-col items-center justify-center sm:w-full md:w-full lg:w-full xl:w-full"
+                >
+                  <Text
+                    className="text-2xl mx-auto md:text-2xl sm:text-xl mb-4 md:mb-0 w-full text-center"
+                    size="txtSoraSemiBold24"
+                  >
+                    {category.title}
+                  </Text>
+                  <div className="grid grid-cols-3 p-10 m-2 md:grid-cols-2 sm:grid-cols-1 gap-12">
+                    {category.skills.map((skill, index) => (
+                      <PortfolioSkills
+                        key={index}
+                        className="bg-white-A700 flex gap-x-7 md:flex-row sm:flex-col items-center justify-evenly p-5 sm:p-5  w-full shadow-lg rounded-lg"
+                        icon={skill.icon}
+                        text={skill.text}
+                      />
+                    ))}
+                  </div>
+                </div>
+              ))}
+            </Carousel>
+          )}
         </div>
       </div>
     </div>
