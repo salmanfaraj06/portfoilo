@@ -79,7 +79,7 @@ const SkillSection = () => {
             showThumbs={false}
             showStatus={false}
             infiniteLoop
-            autoPlay
+            autoPlay={!/Mobi|Android/i.test(navigator.userAgent)}
             interval={2700}
             useKeyboardArrows
             renderArrowPrev={(onClickHandler, hasPrev) =>
