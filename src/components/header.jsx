@@ -28,7 +28,7 @@ function Header() {
   };
 
   return (
-    <header className="flex flex-col items-center justify-center md:px-5 py-6 w-full mx-auto max-w-7xl sm:mb-3">
+    <header className="flex flex-col items-center justify-center md:px-5 py-6 w-full mx-auto max-w-6xl sm:mb-3">
       <div className=" flex flex-row md:gap-10 items-center justify-between max-w-full sm:px-5 w-full ">
         <div className="header-row my-3">
           <div className="flex flex-row gap-3 items-center justify-start">
@@ -68,6 +68,12 @@ function Header() {
             className="capitalize text-black-900 text-xl  w-auto p-2"
           >
             Projects
+          </a>
+          <a
+            href="#blogs"
+            className="capitalize text-black-900 text-xl  w-auto p-2"
+          >
+            Blogs
           </a>
         </div>
         <div className="flex items-center space-x-5">
@@ -147,6 +153,12 @@ function Header() {
             className="block py-1 capitalize text-black-900 text-xl hover:underline mr-[50px]"
           >
             Projects
+          </a>
+          <a
+            href="#blogs"
+            className="block py-1 capitalize text-black-900 text-xl hover:underline mr-[50px]"
+          >
+            Blogs
           </a>
 
           <a

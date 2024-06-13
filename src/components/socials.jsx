@@ -21,7 +21,7 @@ function Socials() {
   ];
 
   return (
-    <div className="mx-auto max-w-7xl md:max-w-[600px]">
+    <div className="mx-auto max-w-6xl md:max-w-[600px]">
     <div className="flex sm:justify-center md:justify-start sm:ml-0 gap-x-9 sm:gap-x-5 sm:mt-5">
       {socials.map((social, index) => (
         <a key={index} href={social.href} target="_blank" rel="noopener noreferrer">
