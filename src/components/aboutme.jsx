@@ -38,7 +38,7 @@ function AboutMe() {
   }, [charIndex, textIndex, texts, isDeleting]);
 
   return (
-    <div className="mx-auto max-w-6xl py-24 sm:py-12 my-16 flex items-center justify-center sm-flex-row md:flex-col flex-row sm:px-5 sm:mx-5">
+    <div className="mx-auto max-w-6xl py-24 sm:py-0 my-16 flex items-center justify-center sm-flex-row md:flex-col flex-row sm:px-5 sm:mx-5">
       <div className="flex-[.5] space-y-8 sm:mt-4">
         <div className="flex flex-row md:flex-col space-x-4 md:space-x-0 md:space-y-4 mb-2">
           <Text
