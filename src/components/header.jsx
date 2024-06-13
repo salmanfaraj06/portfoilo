@@ -28,8 +28,8 @@ function Header() {
   };
 
   return (
-    <header className=" flex flex-col items-center justify-center px-10 md:px-5 py-6 w-full max-w-full sm:mb-3">
-      <div className=" flex flex-row md:gap-10 items-center justify-between max-w-full sm:px-5 px-5 w-full ">
+    <header className="flex flex-col items-center justify-center md:px-5 py-6 w-full mx-auto max-w-7xl sm:mb-3">
+      <div className=" flex flex-row md:gap-10 items-center justify-between max-w-full sm:px-5 w-full ">
         <div className="header-row my-3">
           <div className="flex flex-row gap-3 items-center justify-start">
             <a
@@ -37,7 +37,7 @@ function Header() {
               className="capitalize text-black-900 text-xl  w-auto font-bold "
             >
               <Img
-                className="h-10 w-[39px] sm:hidden"
+                className="h-10 w-[38px] sm:hidden"
                 src="images/favicon.png"
                 alt="logo"
               />

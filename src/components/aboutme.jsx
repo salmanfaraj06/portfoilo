@@ -38,7 +38,7 @@ function AboutMe() {
   }, [charIndex, textIndex, texts, isDeleting]);
 
   return (
-    <div className="h-[75vh] flex items-center justify-center sm-flex-row md:flex-col flex-row mx-8 sm:mb-5">
+    <div className=" h-lvh mx-auto max-w-7xl flex items-center justify-center sm-flex-row md:flex-col flex-row sm:px-5 sm:m-5">
       <div className="flex-[.5] space-y-8 sm:mt-4">
         <div className="flex flex-row md:flex-col space-x-4 md:space-x-0 md:space-y-4 mb-2">
           <Text
@@ -49,7 +49,7 @@ function AboutMe() {
           </Text>
 
           <Text
-            className="sm:text-[24px] text-[38px] h-1 text-black-900 tracking-[-0.96px] w-auto"
+            className="sm:text-[24px] text-[38px] h-1 md:h-10 text-black-900 tracking-[-0.96px] w-auto "
             size="txtSoraExtraBold48"
           >
             {typedText}
@@ -57,7 +57,7 @@ function AboutMe() {
         </div>
 
         <Text
-          className="leading-[24px] max-w-[600px] md:max-w-full text-base text-gray-900 text-justify tracking-[-0.32px]"
+          className="leading-[24px] max-w-[600px] text-base text-gray-900 text-justify tracking-[-0.32px]"
           size="txtSoraRegular16"
         >
           A Computer Science undergraduate at the IIT. I'm passionate about software development, with a

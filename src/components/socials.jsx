@@ -21,13 +21,15 @@ function Socials() {
   ];
 
   return (
-    <div className="flex sm:justify-center md:justify-start sm:ml-0 ml-8 gap-x-9 sm:gap-x-5 sm:mt-5">
+    <div className="mx-auto max-w-7xl md:max-w-[600px]">
+    <div className="flex sm:justify-center md:justify-start sm:ml-0 gap-x-9 sm:gap-x-5 sm:mt-5">
       {socials.map((social, index) => (
         <a key={index} href={social.href} target="_blank" rel="noopener noreferrer">
-          <Img className="h-8 w-9 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110" src={social.imgSrc} alt={social.alt} />
+          <Img className="h-8 w-8 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110" src={social.imgSrc} alt={social.alt} />
         </a>
       ))}
     </div>
+  </div>
   );
 }
 

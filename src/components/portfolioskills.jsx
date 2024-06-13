@@ -4,23 +4,25 @@ import Text from "./text";
 
 const PortfolioSkills = ({ className, icon, text }) => {
     return (
-        <div className={`${className} w-[170px]`}>
+        <div className={`${className} h-[100px] sm:h-auto flex border-2 border-black-900`}>
             {icon && (
-                <div className="flex flex-col h-14 items-center justify-start w-14">
+                <div className="items-start justify-start w-12 sm:w-10">
                     <Img
-                        className="h-14 w-14"
+                        className="h-12 sm:h-10"
                         alt="icon"
                         src={icon}
                     />
                 </div>
             )}
             {text && (
-                <Text
-                    className="capitalize text-black-900 text-center text-xl tracking-[-0.40px] w-full"
-                    size="txtSoraBold20"
-                >
-                    {text}
-                </Text>
+                <div >
+                    <Text
+                        className="capitalize text-black-900 text-center text-xl sm:text-sm tracking-[-0.40px] w-full"
+                        size="txtSoraBold20"
+                    >
+                        {text}
+                    </Text>
+                </div>
             )}
         </div>
     );
