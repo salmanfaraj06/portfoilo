@@ -14,6 +14,7 @@ const variants = {
     blue_gray_300: "bg-blue_gray-300",
     blue_gray_800: "bg-blue_gray-800 text-blue_gray-100",
     white_A700 :"bg-white-A700 text-black",
+    black_900: "bg-black-900 text-white",
   },
 };
 const sizes = {
@@ -30,7 +31,7 @@ const Button = ({
   shape = "",
   variant = "fill",
   size = "xs",
-  color = "blue_700",
+  color = "black_900",
   ...restProps
 }) => {
   return (
