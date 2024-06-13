@@ -4,7 +4,7 @@ import Text from "./text";
 
 const PortfolioSkills = ({ className, icon, text }) => {
     return (
-        <div className={`${className} h-[100px] sm:h-auto sm:w-24 flex border-2 border-black-900`}>
+        <div className={`${className} h-[100px] sm:h-auto sm:w-[85px] flex border-2 border-black-900`}>
             {icon && (
                 <div className="items-start sm:items-center justify-start sm:justify-center sm:mx-auto w-12">
                     <Img

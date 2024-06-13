@@ -103,7 +103,7 @@ const SkillSection = () => {
                   className="w-full flex flex-col items-center justify-center sm:w-full md:w-full lg:w-full xl:w-full"
                 >
                   <Text
-                    className="text-2xl mx-auto md:text-2xl sm:text-xl mb-4 md:mb-0 w-full text-center"
+                    className="text-2xl mx-auto md:text-2xl sm:text-xl mb-4 md:mb-3 w-full text-center"
                     size="txtSoraSemiBold24"
                   >
                     {category.title}
