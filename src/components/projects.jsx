@@ -47,7 +47,7 @@ const projectData = [
       "GitHub",
     ],
     imgSrc: "",
-    link: "https://github.com/salmanfaraj06/mern-boilerplate",
+    link: "https://mern-boilerplate-0ycw.onrender.com/",
     category: "Personal",
   },
   {
