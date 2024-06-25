@@ -6,7 +6,7 @@ import { useState, useEffect } from "react";
 function AboutMe() {
   const texts = [
     "Salman Faraj      ",
-    "a Software Engineer  ",
+    "a Solution Engineer  ",
     "a React Developer ",
   ];
   const [typedText, setTypedText] = useState("");
